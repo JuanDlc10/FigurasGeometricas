@@ -1,19 +1,19 @@
 class FigurasGeometricas{
-    public cuadrado (lado) : number {
+    public cuadrado (lado : number) : number {
         return lado*lado;
     }
-    public rectangulo(base, altura) : number {
+    public rectangulo(base : number, altura : number) : number {
         return base * altura;
     }
-    public triangulo(base, altura) : number {
+    public triangulo(base : number, altura : number) : number {
         return (base * altura) / 2;
     }
-    public circulo(diametro) : number {
+    public circulo(diametro : number) : number {
         let radio = diametro / 2;
         radio = radio * radio;
         return 3.1416 * radio;
     }
-    public seleccionar (opcion){
+    public seleccionar (opcion : number){
         let areaFigura : number = 0;
         if(opcion == 1){
             let lado : any = prompt("Introduce un lado del cuadrado.")
